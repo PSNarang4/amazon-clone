@@ -1,13 +1,12 @@
 const mysql = require('mysql2/promise');
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'amazon_clone',
+  uri: process.env.DATABASE_URL,
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 // quick test on startup
