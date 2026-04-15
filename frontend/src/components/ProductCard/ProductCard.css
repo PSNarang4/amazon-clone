@@ -1,0 +1,137 @@
+.product-card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #0f1111;
+  transition: box-shadow 0.2s;
+  border: 1px solid #ddd;
+  height: 100%;
+}
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.card-img-wrap {
+  position: relative;
+  background: #f7f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  height: 200px;
+  overflow: hidden;
+}
+.card-img {
+  max-height: 176px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.25s;
+}
+.product-card:hover .card-img { transform: scale(1.04); }
+
+.card-discount-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #cc0c39;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.card-body {
+  padding: 10px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.card-name {
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #0f1111;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.product-card:hover .card-name { color: #c7511f; }
+
+.card-brand {
+  font-size: 12px;
+  color: #565959;
+}
+
+.card-rating {
+  margin: 2px 0;
+}
+
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.card-price {
+  font-size: 18px;
+  color: #0f1111;
+  font-weight: 400;
+}
+.price-symbol {
+  font-size: 12px;
+  vertical-align: super;
+  line-height: 0;
+}
+.card-original-price {
+  font-size: 12px;
+  color: #565959;
+}
+
+.card-prime {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+.prime-text {
+  background: #00a8e8;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  font-style: italic;
+  padding: 1px 5px;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+.free-delivery {
+  font-size: 11px;
+  color: #007600;
+}
+
+.out-of-stock-label {
+  font-size: 12px;
+  color: #cc0c39;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.card-add-btn {
+  margin-top: auto;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 6px 0;
+  color: #111;
+  font-weight: 500;
+  transition: filter 0.1s;
+  width: 100%;
+}
+.card-add-btn:hover { filter: brightness(0.96); }

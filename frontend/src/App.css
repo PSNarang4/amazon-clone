@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  background: #eaeded;
+  color: #0f1111;
+  font-size: 14px;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  min-height: calc(100vh - 120px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.star-filled { color: #f90; }
+.star-empty { color: #ddd; }
+
+/* Amazon orange button */
+.btn-amazon {
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  color: #111;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+.btn-amazon:hover { filter: brightness(0.97); }
+
+.btn-amazon-primary {
+  background: linear-gradient(to bottom, #f0c14b, #e5a829);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  color: #111;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: filter 0.1s;
+}
+.btn-amazon-primary:hover { filter: brightness(0.97); }
+
+.btn-amazon-secondary {
+  background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #111;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-amazon-secondary:hover { background: linear-gradient(to bottom, #e8e8e8, #dcdcdc); }
+
+.price-tag {
+  color: #b12704;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.price-symbol {
+  font-size: 13px;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.original-price {
+  color: #565959;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.discount-badge {
+  color: #cc0c39;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.prime-badge {
+  color: #00a8e8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+/* Skeleton loader */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}

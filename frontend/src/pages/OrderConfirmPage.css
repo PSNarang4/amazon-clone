@@ -1,0 +1,164 @@
+.ocp-wrapper {
+  padding: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.ocp-loading { padding: 20px; max-width: 800px; margin: 0 auto; }
+
+.ocp-success-banner {
+  background: #f0faf0;
+  border: 1px solid #008a00;
+  border-radius: 6px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.ocp-checkmark {
+  width: 48px; height: 48px;
+  background: #008a00;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ocp-success-banner h1 {
+  font-size: 22px;
+  color: #008a00;
+  margin-bottom: 4px;
+}
+.ocp-success-banner p { font-size: 13px; color: #555; }
+
+.ocp-main {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+@media (max-width: 768px) { .ocp-main { flex-direction: column; } }
+
+.ocp-details { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.ocp-summary { width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 768px) { .ocp-summary { width: 100%; } }
+
+.ocp-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+}
+.ocp-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.ocp-order-id-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ocp-label { font-size: 13px; color: #565959; display: block; margin-bottom: 2px; }
+.ocp-order-id {
+  font-size: 16px;
+  font-family: monospace;
+  color: #0f1111;
+  letter-spacing: 0.5px;
+}
+.ocp-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+.status-pending { background: #fff3cd; color: #856404; }
+.status-confirmed { background: #d4edda; color: #155724; }
+.status-shipped { background: #cce5ff; color: #004085; }
+.status-delivered { background: #d4edda; color: #155724; }
+.status-cancelled { background: #f8d7da; color: #721c24; }
+
+.ocp-delivery-estimate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+.ocp-truck { font-size: 24px; }
+.ocp-delivery-estimate strong { font-size: 14px; display: block; margin-bottom: 2px; }
+.ocp-delivery-estimate p { font-size: 13px; color: #333; }
+
+.ocp-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.ocp-item:last-child { border-bottom: none; }
+.ocp-item img {
+  width: 70px; height: 70px;
+  object-fit: contain;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.ocp-item-name { font-size: 13px; line-height: 1.4; margin-bottom: 4px; }
+.ocp-item-qty { font-size: 12px; color: #565959; margin-bottom: 4px; }
+.ocp-item-price { font-size: 14px; font-weight: 600; }
+
+.ocp-card p { font-size: 13px; color: #333; margin-bottom: 3px; line-height: 1.5; }
+
+.ocp-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.ocp-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #b12704;
+}
+
+.ocp-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ocp-btn-primary {
+  display: block;
+  text-align: center;
+  background: linear-gradient(to bottom, #f0c14b, #e5a829);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  color: #111;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: filter 0.1s;
+}
+.ocp-btn-primary:hover { filter: brightness(0.97); }
+
+.ocp-btn-secondary {
+  display: block;
+  text-align: center;
+  background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #111;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.ocp-btn-secondary:hover { background: linear-gradient(to bottom, #e8e8e8, #dcdcdc); }
